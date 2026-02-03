@@ -1,0 +1,84 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+.app {
+  width: 280px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-size: 16px;
+  margin: 0 0 4px;
+}
+
+header p {
+  font-size: 12px;
+  margin: 0 0 12px;
+  color: #6b7280;
+}
+
+.control {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.control label {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.control input[type="number"] {
+  width: 80px;
+  padding: 4px 6px;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hint {
+  font-size: 11px;
+  color: #6b7280;
+  margin: 0;
+}
+
+button {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button.danger {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+button.secondary {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+footer {
+  margin-top: 6px;
+  font-size: 10px;
+  color: #9ca3af;
+}
