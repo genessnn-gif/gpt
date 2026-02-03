@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT DOM Trimmer",
+  "version": "1.0.0",
+  "description": "Reduce ChatGPT UI lag by trimming older messages from the DOM.",
+  "permissions": ["storage", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "ChatGPT DOM Trimmer",
+    "default_popup": "popup.html"
+  }
+}

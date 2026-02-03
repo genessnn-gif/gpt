@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChatGPT DOM Trimmer</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>ChatGPT DOM Trimmer</h1>
+        <p>Reduce lag by trimming long conversations.</p>
+      </header>
+
+      <section class="control">
+        <label class="toggle">
+          <span>Enabled</span>
+          <input id="toggle-enabled" type="checkbox" />
+        </label>
+      </section>
+
+      <section class="control">
+        <label>
+          Visible messages
+          <input id="visible-count" type="number" min="1" max="50" />
+        </label>
+      </section>
+
+      <section class="control">
+        <label class="toggle">
+          <span>Suspend trimming</span>
+          <input id="toggle-suspend" type="checkbox" />
+        </label>
+        <p class="hint">Temporarily shows all messages without removing DOM nodes.</p>
+      </section>
+
+      <section class="control">
+        <button id="panic" class="danger">Panic: Disable for this tab</button>
+        <button id="resume" class="secondary">Resume for this tab</button>
+      </section>
+
+      <footer>
+        <small>Settings apply to chatgpt.com only.</small>
+      </footer>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
